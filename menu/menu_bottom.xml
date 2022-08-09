@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/first_tab"
+        android:enabled="true"
+        android:icon="@drawable/homeicon"
+        android:title="Home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/second_tab"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:title="Maps"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/third_tab"
+        android:enabled="true"
+        android:icon="@drawable/shoppingiconremoved"
+        android:title="Store"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/fourth_tab"
+        android:enabled="true"
+        android:icon="@drawable/trashcan"
+        android:title="Report"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/fifth_tab"
+        android:enabled="true"
+        android:icon="@drawable/aquarium3"
+        android:title="Aquarium"
+        app:showAsAction="always"></item>
+
+</menu>

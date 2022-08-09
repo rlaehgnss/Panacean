@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rlaehgnss.sage.StoreActivity"
+    android:background="#f1f1ee">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#345E86"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#f6d170"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_bottom"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-9607977207951677~8224496769"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.276" />
+
+    <ImageView
+        android:layout_width="323dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="156dp"
+        android:src="@drawable/testad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Title"
+        android:layout_width="450dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="                             Point Store"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/store"
+        android:layout_width="144dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="184dp"
+        android:background="@color/white"
+        android:text="편의점"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <Button
+        android:id="@+id/caffe"
+        android:layout_width="144dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="184dp"
+        android:background="@color/white"
+        android:text="카페 제과"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toEndOf="@+id/store"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <Button
+        android:id="@+id/others"
+        android:layout_width="144dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:text="기타"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grocery" />
+
+    <Button
+        android:id="@+id/grocery"
+        android:layout_width="144dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:text="생활용품"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/store" />
+
+    <Button
+        android:id="@+id/aqua"
+        android:layout_width="144dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:text="아쿠아리움"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toEndOf="@+id/others"
+        app:layout_constraintTop_toBottomOf="@+id/outdoor" />
+
+    <Button
+        android:id="@+id/outdoor"
+        android:layout_width="144dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:text="외식, 프렌차이즈"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toEndOf="@+id/grocery"
+        app:layout_constraintTop_toBottomOf="@+id/caffe" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="39dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/searchicon2"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/userimage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="32dp"
+        android:text="0 포인트"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:outlineSpotShadowColor="@color/black"
+        android:text="상품을 검색하세요"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

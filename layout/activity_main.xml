@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rlaehgnss.sage.MainActivity"
+    android:background="#f1f1ee">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#345E86"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#f6d170"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_bottom"
+        tools:layout_editor_absoluteX="0dp">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/tv_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EnvNews" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="120dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/Logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Logo"
+        android:layout_width="139dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Panacean"
+        android:textColor="@color/Black"
+        android:textSize="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="-2dp"
+        android:src="@drawable/searchicon2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="45dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/bellicon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ReportTrash"
+        android:layout_width="179dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp"
+        android:text="쓰레기 제보"
+        android:drawableRight="@drawable/trashcanxml"
+        android:paddingRight="15dp"
+        android:drawablePadding="-5dp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/PointStore"
+        android:layout_width="179dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:drawableRight="@drawable/shoppingicon2xml"
+        android:drawablePadding="-25dp"
+        android:text="포인트 상점"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ReportTrash" />
+
+    <Button
+        android:id="@+id/Ocean"
+        android:layout_width="179dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="해양수산 종사자"
+        android:drawableRight="@drawable/marinexml"
+        android:drawablePadding="-10dp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/EnvNews"
+        app:layout_constraintTop_toBottomOf="@+id/Aquarium" />
+
+    <Button
+        android:id="@+id/Aquarium"
+        android:layout_width="179dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="가상\n아쿠아리움"
+        android:drawableRight="@drawable/aquariumxml"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/PointStore"
+        app:layout_constraintTop_toBottomOf="@+id/Map" />
+
+    <Button
+        android:id="@+id/EnvNews"
+        android:layout_width="179dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableRight="@drawable/greenearthxml"
+        android:drawablePadding="-25dp"
+        android:textSize="15dp"
+        android:text="환경 소식"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PointStore" />
+
+    <Button
+        android:id="@+id/Map"
+        android:layout_width="179dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:paddingRight="10dp"
+        android:drawableRight="@drawable/maplocationxml"
+        android:drawablePadding="-5dp"
+        android:text="쓰레기 지도"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ReportTrash"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-9607977207951677~8224496769"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id" />
+</androidx.constraintlayout.widget.ConstraintLayout>
